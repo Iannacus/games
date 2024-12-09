@@ -27,6 +27,20 @@ export const rowSum = (cells) => {
   }, 0);
 };
 
+
+export const blockCell = (cell) => {
+  cell.isBlocked = true;
+}
+
+export const blockBoard = (board) => {
+  board.forEach(row => {
+    row.forEach(cell => {
+      blockCell(cell);
+    });
+
+  });
+}
+
 export const markCellWith = (mark, board, cell) => {
   cell.state = mark;
   cleanBoard(board);

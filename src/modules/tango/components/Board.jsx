@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import useTangoBoard from "../hooks/useTangoBoard";
 import { useEffect } from "react";
+import debounce from "../../../utils/debounce";
 
 export default function Board({ board, resetBoard, handleReset, onComplete }) {
   const {

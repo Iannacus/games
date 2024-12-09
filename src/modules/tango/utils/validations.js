@@ -3,9 +3,12 @@ import { countColItems, countRowItems } from "./operations";
 export const validateBoard = (board) => {
   if (board.length === 0) return false;
 
-  const isInvalid = board.some((row) => row.some((cell) => cell.invalid));
+  const isInvalid = board.some(
+    (row) =>
+      countRowItems(row, "sun") > 3 || countRowItems(row, "moon") > 3
+  );
   const isIncomplete = board.some((row) =>
-    row.some((cell) => cell.state === "empty" || !cell.state)
+    row.some((cell) => cell.state === "empty" || !cell.state),
   );
 
   return !isInvalid && !isIncomplete;
