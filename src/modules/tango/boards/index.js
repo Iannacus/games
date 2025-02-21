@@ -549,8 +549,57 @@ export const boards = [
       { state: "" },
     ],
   ],
+  [
+    [
+      { state: "", equals: "r" },
+      { state: "", equals: "l" },
+      { state: "", equals: "r" },
+      { state: "", equals: "l" },
+      { state: "" },
+      { state: "moon" },
+    ],
+    [
+      { state: "", equals: "b" },
+      { state: "" },
+      { state: "" },
+      { state: "" },
+      { state: "" },
+      { state: "" },
+    ],
+    [
+      { state: "", equals: "t" },
+      { state: "" },
+      { state: "moon" },
+      { state: "" },
+      { state: "" },
+      { state: "" },
+    ],
+    [
+      { state: "" },
+      { state: "" },
+      { state: "" },
+      { state: "moon" },
+      { state: "" },
+      { state: "", equals: "b" },
+    ],
+    [
+      { state: "" },
+      { state: "" },
+      { state: "" },
+      { state: "" },
+      { state: "" },
+      { state: "", equals: "t" },
+    ],
+    [
+      { state: "sun" },
+      { state: "" },
+      { state: "", times: "r" },
+      { state: "", times: "l" },
+      { state: "", equals: "r" },
+      { state: "", equals: "l" },
+    ],
+  ],
 ];
-
 
 /*
 ********* EMPTY BOARD *********
@@ -565,3 +614,4 @@ export const boards = [
   ],
 
 */
+
