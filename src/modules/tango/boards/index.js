@@ -611,7 +611,7 @@ export const boards = [
     [
       { state: "" },
       { state: "", times: "rb" },
-      { state: "", times: "l", equals: "l" },
+      { state: "", times: "l", equals: "r" },
       { state: "", times: "r", equals: "l" },
       { state: "", times: "l", equals: "b" },
       { state: "" },
